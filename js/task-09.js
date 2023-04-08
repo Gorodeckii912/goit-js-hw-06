@@ -5,8 +5,9 @@ const span = document.querySelector(".color");
 btnChange.addEventListener(`click` , onBtnClick);
 
 function onBtnClick () {
-  span.textContent = getRandomHexColor();
-  body.style.backgroundColor = getRandomHexColor();
+ const votTak = getRandomHexColor();
+  span.textContent = votTak;
+  body.style.backgroundColor = votTak;
 
 
 

@@ -9,7 +9,7 @@ const formEl = event.currentTarget.elements;
 const email = formEl.email.value;
 const password = formEl.password.value;
 
-if (email === `` || password ===``)
+if (email === "" || password === "")
 { alert(`Мы тут не в игры играем - бегом заполнил.`);}
 else { const formData = { email: email,
 password: password};

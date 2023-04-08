@@ -8,4 +8,5 @@ const refs = {
       if (event.currentTarget.value.trim()!== "") {
         refs.output.textContent = event.currentTarget.value;
       }
+      else {refs.output.textContent = `Anonymous`}
     } 

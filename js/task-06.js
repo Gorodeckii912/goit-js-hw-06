@@ -4,7 +4,9 @@ function onInputBlur(event) {
     const total = event.currentTarget.value.length
     if (Number(inputEl.dataset.length) !== total) {
         inputEl.classList.add('invalid');
-        return;
+        inputEl.classList.remove(`valid`);
+       
     }
-    inputEl.classList.add('valid');
+    else { inputEl.classList.add('valid');
+            inputEl.classList.remove(`invalid`);}
 }
